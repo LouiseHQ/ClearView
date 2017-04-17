@@ -1,0 +1,36 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DBA948AFB8D1B6E33B9D6AAB8DFCB9FDCFB94FF9" : 9223372036854775807,
+    "CEEF26FC47C9B74CA1889A91073319A07D0890F5" : 9223372036854775807,
+    "DEF827AEE61008D72BA753A95234A28088662AAB" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AAC1590C-1710-47E1-B2AC-3900FC321591",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DBA948AFB8D1B6E33B9D6AAB8DFCB9FDCFB94FF9" : "..\/..\/coding\/torch",
+    "CEEF26FC47C9B74CA1889A91073319A07D0890F5" : "..\/..\/coding\/torch-ios",
+    "DEF827AEE61008D72BA753A95234A28088662AAB" : "..\/..\/coding\/tensorflow"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ClearView",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ClearView.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/clementfarabet\/torch-ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CEEF26FC47C9B74CA1889A91073319A07D0890F5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/torch\/distro.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DBA948AFB8D1B6E33B9D6AAB8DFCB9FDCFB94FF9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tensorflow\/tensorflow",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DEF827AEE61008D72BA753A95234A28088662AAB"
+    }
+  ]
+}

@@ -7,46 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F64FC2781E9C9E74007F8B05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64FC2771E9C9E74007F8B05 /* AppDelegate.swift */; };
-		F64FC27A1E9C9E74007F8B05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64FC2791E9C9E74007F8B05 /* ViewController.swift */; };
-		F64FC27D1E9C9E74007F8B05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64FC27B1E9C9E74007F8B05 /* Main.storyboard */; };
-		F64FC27F1E9C9E74007F8B05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64FC27E1E9C9E74007F8B05 /* Assets.xcassets */; };
-		F64FC2821E9C9E74007F8B05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64FC2801E9C9E74007F8B05 /* LaunchScreen.storyboard */; };
-		F64FC28D1E9C9E74007F8B05 /* ClearViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64FC28C1E9C9E74007F8B05 /* ClearViewTests.swift */; };
+		2867E7791E9CBEC800D3CECE /* Torch.framework in Resources */ = {isa = PBXBuildFile; fileRef = 289B78261E9C8242007D1709 /* Torch.framework */; };
+		2867E77A1E9CBECF00D3CECE /* Torch.framework in Resources */ = {isa = PBXBuildFile; fileRef = 289B78261E9C8242007D1709 /* Torch.framework */; };
+		289B78001E9C81FE007D1709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B77FF1E9C81FE007D1709 /* AppDelegate.swift */; };
+		289B78021E9C81FE007D1709 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B78011E9C81FE007D1709 /* ViewController.swift */; };
+		289B78051E9C81FE007D1709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289B78031E9C81FE007D1709 /* Main.storyboard */; };
+		289B78071E9C81FE007D1709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 289B78061E9C81FE007D1709 /* Assets.xcassets */; };
+		289B780A1E9C81FE007D1709 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289B78081E9C81FE007D1709 /* LaunchScreen.storyboard */; };
+		289B78151E9C81FE007D1709 /* ClearViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B78141E9C81FE007D1709 /* ClearViewTests.swift */; };
+		289B78211E9C8219007D1709 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289B78201E9C8219007D1709 /* Accelerate.framework */; };
+		289B78271E9C8242007D1709 /* Torch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289B78261E9C8242007D1709 /* Torch.framework */; };
+		289B782D1E9C8286007D1709 /* Torch.m in Sources */ = {isa = PBXBuildFile; fileRef = 289B782C1E9C8286007D1709 /* Torch.m */; };
+		289B78311E9C8A1C007D1709 /* Lua in Resources */ = {isa = PBXBuildFile; fileRef = 289B78301E9C8A1C007D1709 /* Lua */; };
+		289B78321E9C8A1C007D1709 /* Lua in Resources */ = {isa = PBXBuildFile; fileRef = 289B78301E9C8A1C007D1709 /* Lua */; };
+		289B78341E9C8A6D007D1709 /* ILearner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B78331E9C8A6D007D1709 /* ILearner.swift */; };
+		289B78351E9C8A6D007D1709 /* ILearner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B78331E9C8A6D007D1709 /* ILearner.swift */; };
+		289B78381E9C972F007D1709 /* TorchLearner.m in Sources */ = {isa = PBXBuildFile; fileRef = 289B78371E9C972F007D1709 /* TorchLearner.m */; };
+		289B78391E9C972F007D1709 /* TorchLearner.m in Sources */ = {isa = PBXBuildFile; fileRef = 289B78371E9C972F007D1709 /* TorchLearner.m */; };
+		289B783D1E9CA2BE007D1709 /* XorLearner.m in Sources */ = {isa = PBXBuildFile; fileRef = 289B783C1E9CA2BE007D1709 /* XorLearner.m */; };
+		289B783E1E9CA2BE007D1709 /* XorLearner.m in Sources */ = {isa = PBXBuildFile; fileRef = 289B783C1E9CA2BE007D1709 /* XorLearner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F64FC2891E9C9E74007F8B05 /* PBXContainerItemProxy */ = {
+		289B78111E9C81FE007D1709 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F64FC26C1E9C9E74007F8B05 /* Project object */;
+			containerPortal = 289B77F41E9C81FE007D1709 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F64FC2731E9C9E74007F8B05;
+			remoteGlobalIDString = 289B77FB1E9C81FE007D1709;
 			remoteInfo = ClearView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F64FC2741E9C9E74007F8B05 /* ClearView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F64FC2771E9C9E74007F8B05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F64FC2791E9C9E74007F8B05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F64FC27C1E9C9E74007F8B05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F64FC27E1E9C9E74007F8B05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F64FC2811E9C9E74007F8B05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F64FC2831E9C9E74007F8B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F64FC2881E9C9E74007F8B05 /* ClearViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F64FC28C1E9C9E74007F8B05 /* ClearViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearViewTests.swift; sourceTree = "<group>"; };
-		F64FC28E1E9C9E74007F8B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2867E77C1E9D1CD500D3CECE /* ClearView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClearView-Prefix.pch"; sourceTree = "<group>"; };
+		2867E77D1E9D1CF300D3CECE /* ClearViewTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClearViewTests-Prefix.pch"; sourceTree = "<group>"; };
+		289B77FC1E9C81FE007D1709 /* ClearView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		289B77FF1E9C81FE007D1709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		289B78011E9C81FE007D1709 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		289B78041E9C81FE007D1709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		289B78061E9C81FE007D1709 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		289B78091E9C81FE007D1709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		289B780B1E9C81FE007D1709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		289B78101E9C81FE007D1709 /* ClearViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		289B78141E9C81FE007D1709 /* ClearViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearViewTests.swift; sourceTree = "<group>"; };
+		289B78161E9C81FE007D1709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		289B78201E9C8219007D1709 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		289B78261E9C8242007D1709 /* Torch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Torch.framework; path = "../../../coding/torch-ios/Torch.framework"; sourceTree = "<group>"; };
+		289B782A1E9C8286007D1709 /* ClearView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClearView-Bridging-Header.h"; sourceTree = "<group>"; };
+		289B782B1E9C8286007D1709 /* Torch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Torch.h; path = "../../../../coding/torch-ios/framework/Torch.h"; sourceTree = "<group>"; };
+		289B782C1E9C8286007D1709 /* Torch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Torch.m; path = "../../../../coding/torch-ios/framework/Torch.m"; sourceTree = "<group>"; };
+		289B78301E9C8A1C007D1709 /* Lua */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Lua; sourceTree = "<group>"; };
+		289B78331E9C8A6D007D1709 /* ILearner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ILearner.swift; sourceTree = "<group>"; };
+		289B78361E9C972F007D1709 /* ClearViewTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ClearViewTests-Bridging-Header.h"; path = "../ClearView/ClearViewTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		289B78371E9C972F007D1709 /* TorchLearner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorchLearner.m; sourceTree = "<group>"; };
+		289B783A1E9C9750007D1709 /* TorchLearner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorchLearner.h; sourceTree = "<group>"; };
+		289B783B1E9CA298007D1709 /* XorLearner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XorLearner.h; sourceTree = "<group>"; };
+		289B783C1E9CA2BE007D1709 /* XorLearner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XorLearner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F64FC2711E9C9E74007F8B05 /* Frameworks */ = {
+		289B77F91E9C81FE007D1709 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289B78211E9C8219007D1709 /* Accelerate.framework in Frameworks */,
+				289B78271E9C8242007D1709 /* Torch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F64FC2851E9C9E74007F8B05 /* Frameworks */ = {
+		289B780D1E9C81FE007D1709 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,56 +85,110 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F64FC26B1E9C9E74007F8B05 = {
+		2867E77B1E9D1AB100D3CECE /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				F64FC2761E9C9E74007F8B05 /* ClearView */,
-				F64FC28B1E9C9E74007F8B05 /* ClearViewTests */,
-				F64FC2751E9C9E74007F8B05 /* Products */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		289B77F31E9C81FE007D1709 = {
+			isa = PBXGroup;
+			children = (
+				289B77FE1E9C81FE007D1709 /* ClearView */,
+				289B78131E9C81FE007D1709 /* ClearViewTests */,
+				289B77FD1E9C81FE007D1709 /* Products */,
+				289B781F1E9C8219007D1709 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		F64FC2751E9C9E74007F8B05 /* Products */ = {
+		289B77FD1E9C81FE007D1709 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F64FC2741E9C9E74007F8B05 /* ClearView.app */,
-				F64FC2881E9C9E74007F8B05 /* ClearViewTests.xctest */,
+				289B77FC1E9C81FE007D1709 /* ClearView.app */,
+				289B78101E9C81FE007D1709 /* ClearViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F64FC2761E9C9E74007F8B05 /* ClearView */ = {
+		289B77FE1E9C81FE007D1709 /* ClearView */ = {
 			isa = PBXGroup;
 			children = (
-				F64FC2771E9C9E74007F8B05 /* AppDelegate.swift */,
-				F64FC2791E9C9E74007F8B05 /* ViewController.swift */,
-				F64FC27B1E9C9E74007F8B05 /* Main.storyboard */,
-				F64FC27E1E9C9E74007F8B05 /* Assets.xcassets */,
-				F64FC2801E9C9E74007F8B05 /* LaunchScreen.storyboard */,
-				F64FC2831E9C9E74007F8B05 /* Info.plist */,
+				289B782A1E9C8286007D1709 /* ClearView-Bridging-Header.h */,
+				2867E77C1E9D1CD500D3CECE /* ClearView-Prefix.pch */,
+				289B78281E9C8261007D1709 /* Library */,
+				289B77FF1E9C81FE007D1709 /* AppDelegate.swift */,
+				289B78011E9C81FE007D1709 /* ViewController.swift */,
+				289B78031E9C81FE007D1709 /* Main.storyboard */,
+				289B78061E9C81FE007D1709 /* Assets.xcassets */,
+				289B78081E9C81FE007D1709 /* LaunchScreen.storyboard */,
+				289B780B1E9C81FE007D1709 /* Info.plist */,
 			);
 			path = ClearView;
 			sourceTree = "<group>";
 		};
-		F64FC28B1E9C9E74007F8B05 /* ClearViewTests */ = {
+		289B78131E9C81FE007D1709 /* ClearViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				F64FC28C1E9C9E74007F8B05 /* ClearViewTests.swift */,
-				F64FC28E1E9C9E74007F8B05 /* Info.plist */,
+				289B78361E9C972F007D1709 /* ClearViewTests-Bridging-Header.h */,
+				2867E77D1E9D1CF300D3CECE /* ClearViewTests-Prefix.pch */,
+				289B78141E9C81FE007D1709 /* ClearViewTests.swift */,
+				289B78161E9C81FE007D1709 /* Info.plist */,
 			);
 			path = ClearViewTests;
+			sourceTree = "<group>";
+		};
+		289B781F1E9C8219007D1709 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				289B78261E9C8242007D1709 /* Torch.framework */,
+				289B78201E9C8219007D1709 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		289B78281E9C8261007D1709 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				2867E77B1E9D1AB100D3CECE /* Image */,
+				289B78291E9C8269007D1709 /* Learning */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		289B78291E9C8269007D1709 /* Learning */ = {
+			isa = PBXGroup;
+			children = (
+				289B782E1E9C8436007D1709 /* Torch */,
+				289B78331E9C8A6D007D1709 /* ILearner.swift */,
+			);
+			name = Learning;
+			sourceTree = "<group>";
+		};
+		289B782E1E9C8436007D1709 /* Torch */ = {
+			isa = PBXGroup;
+			children = (
+				289B78301E9C8A1C007D1709 /* Lua */,
+				289B782B1E9C8286007D1709 /* Torch.h */,
+				289B782C1E9C8286007D1709 /* Torch.m */,
+				289B783A1E9C9750007D1709 /* TorchLearner.h */,
+				289B78371E9C972F007D1709 /* TorchLearner.m */,
+				289B783B1E9CA298007D1709 /* XorLearner.h */,
+				289B783C1E9CA2BE007D1709 /* XorLearner.m */,
+			);
+			name = Torch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F64FC2731E9C9E74007F8B05 /* ClearView */ = {
+		289B77FB1E9C81FE007D1709 /* ClearView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F64FC2911E9C9E74007F8B05 /* Build configuration list for PBXNativeTarget "ClearView" */;
+			buildConfigurationList = 289B78191E9C81FE007D1709 /* Build configuration list for PBXNativeTarget "ClearView" */;
 			buildPhases = (
-				F64FC2701E9C9E74007F8B05 /* Sources */,
-				F64FC2711E9C9E74007F8B05 /* Frameworks */,
-				F64FC2721E9C9E74007F8B05 /* Resources */,
+				289B77F81E9C81FE007D1709 /* Sources */,
+				289B77F91E9C81FE007D1709 /* Frameworks */,
+				289B77FA1E9C81FE007D1709 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -113,49 +196,51 @@
 			);
 			name = ClearView;
 			productName = ClearView;
-			productReference = F64FC2741E9C9E74007F8B05 /* ClearView.app */;
+			productReference = 289B77FC1E9C81FE007D1709 /* ClearView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F64FC2871E9C9E74007F8B05 /* ClearViewTests */ = {
+		289B780F1E9C81FE007D1709 /* ClearViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F64FC2941E9C9E74007F8B05 /* Build configuration list for PBXNativeTarget "ClearViewTests" */;
+			buildConfigurationList = 289B781C1E9C81FE007D1709 /* Build configuration list for PBXNativeTarget "ClearViewTests" */;
 			buildPhases = (
-				F64FC2841E9C9E74007F8B05 /* Sources */,
-				F64FC2851E9C9E74007F8B05 /* Frameworks */,
-				F64FC2861E9C9E74007F8B05 /* Resources */,
+				289B780C1E9C81FE007D1709 /* Sources */,
+				289B780D1E9C81FE007D1709 /* Frameworks */,
+				289B780E1E9C81FE007D1709 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F64FC28A1E9C9E74007F8B05 /* PBXTargetDependency */,
+				289B78121E9C81FE007D1709 /* PBXTargetDependency */,
 			);
 			name = ClearViewTests;
 			productName = ClearViewTests;
-			productReference = F64FC2881E9C9E74007F8B05 /* ClearViewTests.xctest */;
+			productReference = 289B78101E9C81FE007D1709 /* ClearViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F64FC26C1E9C9E74007F8B05 /* Project object */ = {
+		289B77F41E9C81FE007D1709 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = LouiseHQ;
+				ORGANIZATIONNAME = "Xiaotian Le";
 				TargetAttributes = {
-					F64FC2731E9C9E74007F8B05 = {
-						CreatedOnToolsVersion = 8.3;
+					289B77FB1E9C81FE007D1709 = {
+						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
-					F64FC2871E9C9E74007F8B05 = {
-						CreatedOnToolsVersion = 8.3;
+					289B780F1E9C81FE007D1709 = {
+						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
-						TestTargetID = F64FC2731E9C9E74007F8B05;
+						TestTargetID = 289B77FB1E9C81FE007D1709;
 					};
 				};
 			};
-			buildConfigurationList = F64FC26F1E9C9E74007F8B05 /* Build configuration list for PBXProject "ClearView" */;
+			buildConfigurationList = 289B77F71E9C81FE007D1709 /* Build configuration list for PBXProject "ClearView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -163,78 +248,89 @@
 				en,
 				Base,
 			);
-			mainGroup = F64FC26B1E9C9E74007F8B05;
-			productRefGroup = F64FC2751E9C9E74007F8B05 /* Products */;
+			mainGroup = 289B77F31E9C81FE007D1709;
+			productRefGroup = 289B77FD1E9C81FE007D1709 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F64FC2731E9C9E74007F8B05 /* ClearView */,
-				F64FC2871E9C9E74007F8B05 /* ClearViewTests */,
+				289B77FB1E9C81FE007D1709 /* ClearView */,
+				289B780F1E9C81FE007D1709 /* ClearViewTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F64FC2721E9C9E74007F8B05 /* Resources */ = {
+		289B77FA1E9C81FE007D1709 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F64FC2821E9C9E74007F8B05 /* LaunchScreen.storyboard in Resources */,
-				F64FC27F1E9C9E74007F8B05 /* Assets.xcassets in Resources */,
-				F64FC27D1E9C9E74007F8B05 /* Main.storyboard in Resources */,
+				2867E7791E9CBEC800D3CECE /* Torch.framework in Resources */,
+				289B78311E9C8A1C007D1709 /* Lua in Resources */,
+				289B78071E9C81FE007D1709 /* Assets.xcassets in Resources */,
+				289B780A1E9C81FE007D1709 /* LaunchScreen.storyboard in Resources */,
+				289B78051E9C81FE007D1709 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F64FC2861E9C9E74007F8B05 /* Resources */ = {
+		289B780E1E9C81FE007D1709 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2867E77A1E9CBECF00D3CECE /* Torch.framework in Resources */,
+				289B78321E9C8A1C007D1709 /* Lua in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F64FC2701E9C9E74007F8B05 /* Sources */ = {
+		289B77F81E9C81FE007D1709 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F64FC27A1E9C9E74007F8B05 /* ViewController.swift in Sources */,
-				F64FC2781E9C9E74007F8B05 /* AppDelegate.swift in Sources */,
+				289B783D1E9CA2BE007D1709 /* XorLearner.m in Sources */,
+				289B78341E9C8A6D007D1709 /* ILearner.swift in Sources */,
+				289B782D1E9C8286007D1709 /* Torch.m in Sources */,
+				289B78021E9C81FE007D1709 /* ViewController.swift in Sources */,
+				289B78001E9C81FE007D1709 /* AppDelegate.swift in Sources */,
+				289B78381E9C972F007D1709 /* TorchLearner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F64FC2841E9C9E74007F8B05 /* Sources */ = {
+		289B780C1E9C81FE007D1709 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F64FC28D1E9C9E74007F8B05 /* ClearViewTests.swift in Sources */,
+				289B78351E9C8A6D007D1709 /* ILearner.swift in Sources */,
+				289B78151E9C81FE007D1709 /* ClearViewTests.swift in Sources */,
+				289B783E1E9CA2BE007D1709 /* XorLearner.m in Sources */,
+				289B78391E9C972F007D1709 /* TorchLearner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F64FC28A1E9C9E74007F8B05 /* PBXTargetDependency */ = {
+		289B78121E9C81FE007D1709 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F64FC2731E9C9E74007F8B05 /* ClearView */;
-			targetProxy = F64FC2891E9C9E74007F8B05 /* PBXContainerItemProxy */;
+			target = 289B77FB1E9C81FE007D1709 /* ClearView */;
+			targetProxy = 289B78111E9C81FE007D1709 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F64FC27B1E9C9E74007F8B05 /* Main.storyboard */ = {
+		289B78031E9C81FE007D1709 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F64FC27C1E9C9E74007F8B05 /* Base */,
+				289B78041E9C81FE007D1709 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F64FC2801E9C9E74007F8B05 /* LaunchScreen.storyboard */ = {
+		289B78081E9C81FE007D1709 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F64FC2811E9C9E74007F8B05 /* Base */,
+				289B78091E9C81FE007D1709 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -242,7 +338,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F64FC28F1E9C9E74007F8B05 /* Debug */ = {
+		289B78171E9C81FE007D1709 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,7 +389,7 @@
 			};
 			name = Debug;
 		};
-		F64FC2901E9C9E74007F8B05 /* Release */ = {
+		289B78181E9C81FE007D1709 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -337,87 +433,126 @@
 			};
 			name = Release;
 		};
-		F64FC2921E9C9E74007F8B05 /* Debug */ = {
+		289B781A1E9C81FE007D1709 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"~/coding/torch-ios/",
+				);
 				INFOPLIST_FILE = ClearView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = louiseHQ.ClearView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xle2.ClearView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClearView/ClearView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) ~/coding/torch-ios/";
 			};
 			name = Debug;
 		};
-		F64FC2931E9C9E74007F8B05 /* Release */ = {
+		289B781B1E9C81FE007D1709 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"~/coding/torch-ios/",
+				);
 				INFOPLIST_FILE = ClearView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = louiseHQ.ClearView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xle2.ClearView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClearView/ClearView-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) ~/coding/torch-ios/";
 			};
 			name = Release;
 		};
-		F64FC2951E9C9E74007F8B05 /* Debug */ = {
+		289B781D1E9C81FE007D1709 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
+				FRAMEWORK_SEARCH_PATHS = "~/coding/torch-ios/";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ClearViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = louiseHQ.ClearViewTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xle2.ClearViewTests;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClearView/ClearViewTests-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClearView.app/ClearView";
+				USER_HEADER_SEARCH_PATHS = "~/coding/torch-ios/";
 			};
 			name = Debug;
 		};
-		F64FC2961E9C9E74007F8B05 /* Release */ = {
+		289B781E1E9C81FE007D1709 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
+				FRAMEWORK_SEARCH_PATHS = "~/coding/torch-ios/";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ClearViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = louiseHQ.ClearViewTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xle2.ClearViewTests;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClearView/ClearViewTests-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClearView.app/ClearView";
+				USER_HEADER_SEARCH_PATHS = "~/coding/torch-ios/";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F64FC26F1E9C9E74007F8B05 /* Build configuration list for PBXProject "ClearView" */ = {
+		289B77F71E9C81FE007D1709 /* Build configuration list for PBXProject "ClearView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F64FC28F1E9C9E74007F8B05 /* Debug */,
-				F64FC2901E9C9E74007F8B05 /* Release */,
+				289B78171E9C81FE007D1709 /* Debug */,
+				289B78181E9C81FE007D1709 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F64FC2911E9C9E74007F8B05 /* Build configuration list for PBXNativeTarget "ClearView" */ = {
+		289B78191E9C81FE007D1709 /* Build configuration list for PBXNativeTarget "ClearView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F64FC2921E9C9E74007F8B05 /* Debug */,
-				F64FC2931E9C9E74007F8B05 /* Release */,
+				289B781A1E9C81FE007D1709 /* Debug */,
+				289B781B1E9C81FE007D1709 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		F64FC2941E9C9E74007F8B05 /* Build configuration list for PBXNativeTarget "ClearViewTests" */ = {
+		289B781C1E9C81FE007D1709 /* Build configuration list for PBXNativeTarget "ClearViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F64FC2951E9C9E74007F8B05 /* Debug */,
-				F64FC2961E9C9E74007F8B05 /* Release */,
+				289B781D1E9C81FE007D1709 /* Debug */,
+				289B781E1E9C81FE007D1709 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F64FC26C1E9C9E74007F8B05 /* Project object */;
+	rootObject = 289B77F41E9C81FE007D1709 /* Project object */;
 }
