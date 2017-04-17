@@ -11,6 +11,10 @@
 
 #import <UIKit/UIKit.h>
 
+/*!
+ @brief A container for storing images for processing
+ @discussion Based on OpenCV (https://github.com/opencv/opencv)
+ */
 @interface OpenCVImage: NSObject
 
 /*!
@@ -22,6 +26,22 @@
  @brief Render a UIImage based on the current object
  */
 - (UIImage *)getUIImage;
+
+/*!
+ @brief Get the height of the image
+ */
+- (int)getHeight;
+
+/*!
+ @brief Get the width of the image
+ */
+- (int)getWidth;
+
+/*!
+ @brief Scale the image uniformly in place
+ @param ratio New length divided by old length
+ */
+- (void)scale: (CGFloat)ratio;
 
 @end
 

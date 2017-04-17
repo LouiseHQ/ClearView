@@ -1,4 +1,3 @@
-
 //
 //  SimpleTorchLearner.m
 //  ClearView

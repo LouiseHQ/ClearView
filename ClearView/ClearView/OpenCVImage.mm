@@ -14,30 +14,54 @@
 
 @property (nonatomic, assign) cv::Mat mat;
 
+/*!
+ @brief Create an object containing (a copy of) a cv::Mat
+ */
+- (id)initWithMat: (cv::Mat)mat;
+
 /**
  Helper to create a cv::Mat from a UIImage
  */
-- (cv::Mat)cvMatFromUIImage:(UIImage *)image;
+- (cv::Mat)createCVMatFromUIImage: (UIImage *)image;
 
 /**
  Helper to create a UIImage from a cv::Mat
  */
-- (UIImage *)UIImageFromCVMat:(cv::Mat)cvMat;
+- (UIImage *)createUIImageFromCVMat: (cv::Mat)cvMat;
 
 @end
 
 @implementation OpenCVImage
 
+- (id)initWithMat: (cv::Mat)mat {
+    self.mat = mat;
+    return self;
+}
+
 - (id)initWithUIImage: (UIImage *)image {
-    self.mat = [self cvMatFromUIImage: image];
+    self.mat = [self createCVMatFromUIImage: image];
     return self;
 }
 
 - (UIImage *)getUIImage {
-    return [self UIImageFromCVMat: self.mat];
+    return [self createUIImageFromCVMat: self.mat];
 }
 
-- (cv::Mat)cvMatFromUIImage: (UIImage *)image {
+- (int)getHeight {
+    return self.mat.rows;
+}
+
+- (int)getWidth {
+    return self.mat.cols;
+}
+
+- (void)scale: (CGFloat)ratio {
+    cv::Mat scaled;
+    cv::resize(self.mat, scaled, cv::Size(), ratio, ratio);
+    self.mat = scaled;
+}
+
+- (cv::Mat)createCVMatFromUIImage: (UIImage *)image {
     CGColorSpaceRef colorSpace = CGImageGetColorSpace(image.CGImage);
     CGFloat cols = image.size.width;
     CGFloat rows = image.size.height;
@@ -55,7 +79,7 @@
     return cvMat;
 }
 
-- (UIImage *)UIImageFromCVMat: (cv::Mat)cvMat {
+- (UIImage *)createUIImageFromCVMat: (cv::Mat)cvMat {
     NSData *data = [NSData dataWithBytes:cvMat.data length:cvMat.elemSize()*cvMat.total()];
     CGColorSpaceRef colorSpace;
     if (cvMat.elemSize() == 1) {
