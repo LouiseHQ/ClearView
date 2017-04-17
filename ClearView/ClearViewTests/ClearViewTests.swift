@@ -20,12 +20,4 @@ class ClearViewTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testXorLearner() {
-        let xorLearner: XorLearner = XorLearner()
-        XCTAssert(xorLearner.classify(1, and: 1) < 0)
-        XCTAssert(xorLearner.classify(1, and: -1) > 0)
-        XCTAssert(xorLearner.classify(-1, and: 1) > 0)
-        XCTAssert(xorLearner.classify(-1, and: -1) < 0)
-    }
 }

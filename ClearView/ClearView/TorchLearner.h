@@ -16,12 +16,20 @@
 #define KBYTES_CLEAN_UP 10000  //10 Megabytes Max Storage Otherwise Force Cleanup
 #define LUAT_STACK_INDEX_FLOAT_TENSORS 4  //Index of Garbage Collection Stack Value
 
+/*! @brief The base Torch learner providing basic helpers */
 @interface TorchLearner: NSObject  // <ILearner>
 
 @property (nonatomic, strong) Torch *torch;
 
+/*!
+ Create an object based on a Lua script file
+ @param script The path to the script file
+ */
 - (id)initWithScript: (NSString *)script;
 
+/*!
+ 
+ */
 - (void)saveToPath: (NSString *)path;
 
 - (void)loadFromPath: (NSString *)path;
