@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2849C04D1E9D2595003E84BF /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2849C04C1E9D2595003E84BF /* opencv2.framework */; };
+		2849C04E1E9D2595003E84BF /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2849C04C1E9D2595003E84BF /* opencv2.framework */; };
+		2849C0541E9D2769003E84BF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849C0531E9D2769003E84BF /* Image.swift */; };
+		2849C0551E9D2769003E84BF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849C0531E9D2769003E84BF /* Image.swift */; };
+		2849C0571E9D2795003E84BF /* OpenCVImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2849C0561E9D2795003E84BF /* OpenCVImage.mm */; };
+		2849C0581E9D2795003E84BF /* OpenCVImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2849C0561E9D2795003E84BF /* OpenCVImage.mm */; };
+		2849C05F1E9D3319003E84BF /* ImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849C05E1E9D3319003E84BF /* ImageTests.swift */; };
+		2849C0611E9D335D003E84BF /* LearnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849C0601E9D335D003E84BF /* LearnerTests.swift */; };
 		2867E7791E9CBEC800D3CECE /* Torch.framework in Resources */ = {isa = PBXBuildFile; fileRef = 289B78261E9C8242007D1709 /* Torch.framework */; };
 		2867E77A1E9CBECF00D3CECE /* Torch.framework in Resources */ = {isa = PBXBuildFile; fileRef = 289B78261E9C8242007D1709 /* Torch.framework */; };
 		289B78001E9C81FE007D1709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B77FF1E9C81FE007D1709 /* AppDelegate.swift */; };
@@ -39,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2849C04C1E9D2595003E84BF /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		2849C0531E9D2769003E84BF /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		2849C0561E9D2795003E84BF /* OpenCVImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVImage.mm; sourceTree = "<group>"; };
+		2849C0591E9D27AE003E84BF /* OpenCVImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVImage.h; sourceTree = "<group>"; };
+		2849C05E1E9D3319003E84BF /* ImageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTests.swift; sourceTree = "<group>"; };
+		2849C0601E9D335D003E84BF /* LearnerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnerTests.swift; sourceTree = "<group>"; };
 		2867E77C1E9D1CD500D3CECE /* ClearView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClearView-Prefix.pch"; sourceTree = "<group>"; };
 		2867E77D1E9D1CF300D3CECE /* ClearViewTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClearViewTests-Prefix.pch"; sourceTree = "<group>"; };
 		289B77FC1E9C81FE007D1709 /* ClearView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2849C04D1E9D2595003E84BF /* opencv2.framework in Frameworks */,
 				289B78211E9C8219007D1709 /* Accelerate.framework in Frameworks */,
 				289B78271E9C8242007D1709 /* Torch.framework in Frameworks */,
 			);
@@ -79,15 +94,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2849C04E1E9D2595003E84BF /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2849C04F1E9D2627003E84BF /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				2849C0591E9D27AE003E84BF /* OpenCVImage.h */,
+				2849C0561E9D2795003E84BF /* OpenCVImage.mm */,
+			);
+			name = OpenCV;
+			sourceTree = "<group>";
+		};
 		2867E77B1E9D1AB100D3CECE /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				2849C04F1E9D2627003E84BF /* OpenCV */,
+				2849C0531E9D2769003E84BF /* Image.swift */,
 			);
 			name = Image;
 			sourceTree = "<group>";
@@ -133,7 +160,9 @@
 				289B78361E9C972F007D1709 /* ClearViewTests-Bridging-Header.h */,
 				2867E77D1E9D1CF300D3CECE /* ClearViewTests-Prefix.pch */,
 				289B78141E9C81FE007D1709 /* ClearViewTests.swift */,
+				2849C05E1E9D3319003E84BF /* ImageTests.swift */,
 				289B78161E9C81FE007D1709 /* Info.plist */,
+				2849C0601E9D335D003E84BF /* LearnerTests.swift */,
 			);
 			path = ClearViewTests;
 			sourceTree = "<group>";
@@ -141,6 +170,7 @@
 		289B781F1E9C8219007D1709 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2849C04C1E9D2595003E84BF /* opencv2.framework */,
 				289B78261E9C8242007D1709 /* Torch.framework */,
 				289B78201E9C8219007D1709 /* Accelerate.framework */,
 			);
@@ -289,6 +319,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				289B783D1E9CA2BE007D1709 /* XorLearner.m in Sources */,
+				2849C0541E9D2769003E84BF /* Image.swift in Sources */,
+				2849C0571E9D2795003E84BF /* OpenCVImage.mm in Sources */,
 				289B78341E9C8A6D007D1709 /* ILearner.swift in Sources */,
 				289B782D1E9C8286007D1709 /* Torch.m in Sources */,
 				289B78021E9C81FE007D1709 /* ViewController.swift in Sources */,
@@ -302,8 +334,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				289B78351E9C8A6D007D1709 /* ILearner.swift in Sources */,
+				2849C0611E9D335D003E84BF /* LearnerTests.swift in Sources */,
+				2849C0551E9D2769003E84BF /* Image.swift in Sources */,
 				289B78151E9C81FE007D1709 /* ClearViewTests.swift in Sources */,
 				289B783E1E9CA2BE007D1709 /* XorLearner.m in Sources */,
+				2849C0581E9D2795003E84BF /* OpenCVImage.mm in Sources */,
+				2849C05F1E9D3319003E84BF /* ImageTests.swift in Sources */,
 				289B78391E9C972F007D1709 /* TorchLearner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +477,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"~/coding/torch-ios/",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ClearView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -461,6 +498,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"~/coding/torch-ios/",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ClearView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -479,7 +517,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = NO;
-				FRAMEWORK_SEARCH_PATHS = "~/coding/torch-ios/";
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/coding/torch-ios/",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -506,7 +547,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = NO;
-				FRAMEWORK_SEARCH_PATHS = "~/coding/torch-ios/";
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/coding/torch-ios/",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ClearViewTests/Info.plist;

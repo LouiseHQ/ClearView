@@ -3,3 +3,4 @@
 //
 
 #import "XorLearner.h"
+#import "OpenCVImage.h"
