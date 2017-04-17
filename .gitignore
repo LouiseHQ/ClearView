@@ -1,5 +1,7 @@
 .DS_Store
 
+opencv2.framework
+
 # Xcode
 #
 # gitignore contributors remember to update GlobalXcode.gitignore, Objective-C.gitignore & Swift.gitignore
