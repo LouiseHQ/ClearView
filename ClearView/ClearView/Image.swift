@@ -8,6 +8,9 @@
 
 import Foundation
 
+/*!
+ @brief A container for storing images for processing
+ */
 public class Image {
     var data: OpenCVImage
     
@@ -23,5 +26,13 @@ public class Image {
      */
     func getUIImage() -> UIImage {
         return data.getUIImage()
+    }
+    
+    func getSize() -> (Int32, Int32) {
+        return (data.getHeight(), data.getWidth())
+    }
+    
+    func scale(ratio: CGFloat) {
+        data.scale(ratio);
     }
 }

@@ -1,11 +1,10 @@
 torch.setdefaulttensortype('torch.FloatTensor')
-model = ""
 
 function loadNeuralNetwork(path)
   print (path)
-  print ("Loaded Neural Network -- Success")
   model = torch.load(path)
 
+  print ("Loaded Neural Network -- Success")
   print ("Model Architecture --\n")
   print (model)
   print ("---------------------\n")
