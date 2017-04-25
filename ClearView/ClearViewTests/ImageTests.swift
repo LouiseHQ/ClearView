@@ -30,21 +30,12 @@ class ImageTests: XCTestCase {
         return (heightInPixels, widthInPixels)
     }
     
-    func testConversion() {
-        let image = Image(image: UIImage(named: "Apple")!)
-        let uiImage = image.getUIImage()
-        let (height, width) = getSize(uiImage)
+    func testRemoveReflection() {
+        let uiImage = UIImage(named: "Apple")!
+        let resultImage = ImageUtil.removeReflection(uiImage)
+        let (height, width) = getSize(resultImage)
         
         XCTAssertEqual(height, 302)
         XCTAssertEqual(width, 302)
-    }
-    
-    func testScale() {
-        let image = Image(image: UIImage(named: "Apple")!)
-        image.scale(ratio: 0.5)
-        
-        let (height, width) = image.getSize()
-        XCTAssertEqual(height, 151)
-        XCTAssertEqual(width, 151)
     }
 }

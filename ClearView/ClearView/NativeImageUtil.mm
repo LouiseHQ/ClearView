@@ -1,67 +1,40 @@
 //
-//  OpenCVImage.m
-//  ClearView
-//
 //  Created by Bell on 4/11/17.
 //  Copyright © 2017 Xiaotian Le. All rights reserved.
 //
 
 #import <opencv2/opencv.hpp>
 #import <Foundation/Foundation.h>
+#import "NativeImageUtil.h"
 #import "OpenCVImage.h"
+#import "ImageProcess.h"
 
-@interface OpenCVImage ()
+@interface NativeImageUtil ()
 
-@property (nonatomic, assign) cv::Mat mat;
+//@property (nonatomic, assign) std::shared_ptr<OpenCVImage> image;
 
 /*!
- @brief Create an object containing (a copy of) a cv::Mat
+ @brief Helper to create a cv::Mat from a UIImage
  */
-- (id)initWithMat: (cv::Mat)mat;
++ (cv::Mat)createCVMatFromUIImage: (UIImage *)image;
 
-/**
- Helper to create a cv::Mat from a UIImage
+/*!
+ @brief Helper to create a UIImage from a cv::Mat
  */
-- (cv::Mat)createCVMatFromUIImage: (UIImage *)image;
-
-/**
- Helper to create a UIImage from a cv::Mat
- */
-- (UIImage *)createUIImageFromCVMat: (cv::Mat)cvMat;
++ (UIImage *)createUIImageFromCVMat: (cv::Mat)cvMat;
 
 @end
 
-@implementation OpenCVImage
+@implementation NativeImageUtil
 
-- (id)initWithMat: (cv::Mat)mat {
-    self.mat = mat;
-    return self;
++ (UIImage *)removeReflection: (UIImage *)image {
+    cv::Mat mat = [NativeImageUtil createCVMatFromUIImage: image];
+    OpenCVImage cvImage(mat);
+    OpenCVImage resultImage = ImageProcess::removeReflection(cvImage);
+    return [NativeImageUtil createUIImageFromCVMat: resultImage.getMat()];
 }
 
-- (id)initWithUIImage: (UIImage *)image {
-    self.mat = [self createCVMatFromUIImage: image];
-    return self;
-}
-
-- (UIImage *)getUIImage {
-    return [self createUIImageFromCVMat: self.mat];
-}
-
-- (int)getHeight {
-    return self.mat.rows;
-}
-
-- (int)getWidth {
-    return self.mat.cols;
-}
-
-- (void)scale: (CGFloat)ratio {
-    cv::Mat scaled;
-    cv::resize(self.mat, scaled, cv::Size(), ratio, ratio);
-    self.mat = scaled;
-}
-
-- (cv::Mat)createCVMatFromUIImage: (UIImage *)image {
++ (cv::Mat)createCVMatFromUIImage: (UIImage *)image {
     CGColorSpaceRef colorSpace = CGImageGetColorSpace(image.CGImage);
     CGFloat cols = image.size.width;
     CGFloat rows = image.size.height;
@@ -79,7 +52,7 @@
     return cvMat;
 }
 
-- (UIImage *)createUIImageFromCVMat: (cv::Mat)cvMat {
++ (UIImage *)createUIImageFromCVMat: (cv::Mat)cvMat {
     NSData *data = [NSData dataWithBytes:cvMat.data length:cvMat.elemSize()*cvMat.total()];
     CGColorSpaceRef colorSpace;
     if (cvMat.elemSize() == 1) {
