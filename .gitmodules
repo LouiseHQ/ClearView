@@ -1,0 +1,3 @@
+[submodule "CppClearView"]
+	path = CppClearView
+	url = https://github.com/lxtbell/CppClearView

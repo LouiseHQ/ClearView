@@ -7,16 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281400AB1EA4981000EBE034 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289B78201E9C8219007D1709 /* Accelerate.framework */; };
+		281400AC1EA4982400EBE034 /* Torch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289B78261E9C8242007D1709 /* Torch.framework */; };
 		2849C04D1E9D2595003E84BF /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2849C04C1E9D2595003E84BF /* opencv2.framework */; };
 		2849C04E1E9D2595003E84BF /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2849C04C1E9D2595003E84BF /* opencv2.framework */; };
-		2849C0541E9D2769003E84BF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849C0531E9D2769003E84BF /* Image.swift */; };
-		2849C0551E9D2769003E84BF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849C0531E9D2769003E84BF /* Image.swift */; };
-		2849C0571E9D2795003E84BF /* OpenCVImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2849C0561E9D2795003E84BF /* OpenCVImage.mm */; };
-		2849C0581E9D2795003E84BF /* OpenCVImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2849C0561E9D2795003E84BF /* OpenCVImage.mm */; };
+		2849C0541E9D2769003E84BF /* ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849C0531E9D2769003E84BF /* ImageUtil.swift */; };
+		2849C0551E9D2769003E84BF /* ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849C0531E9D2769003E84BF /* ImageUtil.swift */; };
+		2849C0571E9D2795003E84BF /* NativeImageUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2849C0561E9D2795003E84BF /* NativeImageUtil.mm */; };
+		2849C0581E9D2795003E84BF /* NativeImageUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2849C0561E9D2795003E84BF /* NativeImageUtil.mm */; };
 		2849C05F1E9D3319003E84BF /* ImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849C05E1E9D3319003E84BF /* ImageTests.swift */; };
 		2849C0611E9D335D003E84BF /* LearnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849C0601E9D335D003E84BF /* LearnerTests.swift */; };
 		2867E7791E9CBEC800D3CECE /* Torch.framework in Resources */ = {isa = PBXBuildFile; fileRef = 289B78261E9C8242007D1709 /* Torch.framework */; };
 		2867E77A1E9CBECF00D3CECE /* Torch.framework in Resources */ = {isa = PBXBuildFile; fileRef = 289B78261E9C8242007D1709 /* Torch.framework */; };
+		28934B5A1EAF918E00D00B11 /* ImageProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28934B4E1EAF918E00D00B11 /* ImageProcess.cpp */; };
+		28934B5B1EAF918E00D00B11 /* ImageProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28934B4E1EAF918E00D00B11 /* ImageProcess.cpp */; };
+		28934B5C1EAF918E00D00B11 /* OpenCVImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28934B501EAF918E00D00B11 /* OpenCVImage.cpp */; };
+		28934B5D1EAF918E00D00B11 /* OpenCVImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28934B501EAF918E00D00B11 /* OpenCVImage.cpp */; };
+		28934B5E1EAF918E00D00B11 /* OpenCVKernel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28934B521EAF918E00D00B11 /* OpenCVKernel.cpp */; };
+		28934B5F1EAF918E00D00B11 /* OpenCVKernel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28934B521EAF918E00D00B11 /* OpenCVKernel.cpp */; };
+		28934B601EAF918E00D00B11 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28934B541EAF918E00D00B11 /* stdafx.cpp */; };
+		28934B611EAF918E00D00B11 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28934B541EAF918E00D00B11 /* stdafx.cpp */; };
+		28934B621EAF918E00D00B11 /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28934B581EAF918E00D00B11 /* Util.cpp */; };
+		28934B631EAF918E00D00B11 /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28934B581EAF918E00D00B11 /* Util.cpp */; };
 		289B78001E9C81FE007D1709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B77FF1E9C81FE007D1709 /* AppDelegate.swift */; };
 		289B78021E9C81FE007D1709 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B78011E9C81FE007D1709 /* ViewController.swift */; };
 		289B78051E9C81FE007D1709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289B78031E9C81FE007D1709 /* Main.storyboard */; };
@@ -48,13 +60,25 @@
 
 /* Begin PBXFileReference section */
 		2849C04C1E9D2595003E84BF /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
-		2849C0531E9D2769003E84BF /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		2849C0561E9D2795003E84BF /* OpenCVImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVImage.mm; sourceTree = "<group>"; };
-		2849C0591E9D27AE003E84BF /* OpenCVImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVImage.h; sourceTree = "<group>"; };
+		2849C0531E9D2769003E84BF /* ImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtil.swift; sourceTree = "<group>"; };
+		2849C0561E9D2795003E84BF /* NativeImageUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NativeImageUtil.mm; sourceTree = "<group>"; };
+		2849C0591E9D27AE003E84BF /* NativeImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeImageUtil.h; sourceTree = "<group>"; };
 		2849C05E1E9D3319003E84BF /* ImageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTests.swift; sourceTree = "<group>"; };
 		2849C0601E9D335D003E84BF /* LearnerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnerTests.swift; sourceTree = "<group>"; };
 		2867E77C1E9D1CD500D3CECE /* ClearView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClearView-Prefix.pch"; sourceTree = "<group>"; };
 		2867E77D1E9D1CF300D3CECE /* ClearViewTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClearViewTests-Prefix.pch"; sourceTree = "<group>"; };
+		28934B4E1EAF918E00D00B11 /* ImageProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ImageProcess.cpp; path = ../../CppClearView/ClearView/ImageProcess.cpp; sourceTree = "<group>"; };
+		28934B4F1EAF918E00D00B11 /* ImageProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageProcess.h; path = ../../CppClearView/ClearView/ImageProcess.h; sourceTree = "<group>"; };
+		28934B501EAF918E00D00B11 /* OpenCVImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenCVImage.cpp; path = ../../CppClearView/ClearView/OpenCVImage.cpp; sourceTree = "<group>"; };
+		28934B511EAF918E00D00B11 /* OpenCVImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenCVImage.h; path = ../../CppClearView/ClearView/OpenCVImage.h; sourceTree = "<group>"; };
+		28934B521EAF918E00D00B11 /* OpenCVKernel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenCVKernel.cpp; path = ../../CppClearView/ClearView/OpenCVKernel.cpp; sourceTree = "<group>"; };
+		28934B531EAF918E00D00B11 /* OpenCVKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenCVKernel.h; path = ../../CppClearView/ClearView/OpenCVKernel.h; sourceTree = "<group>"; };
+		28934B541EAF918E00D00B11 /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stdafx.cpp; path = ../../CppClearView/ClearView/stdafx.cpp; sourceTree = "<group>"; };
+		28934B551EAF918E00D00B11 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stdafx.h; path = ../../CppClearView/ClearView/stdafx.h; sourceTree = "<group>"; };
+		28934B561EAF918E00D00B11 /* targetver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = targetver.h; path = ../../CppClearView/ClearView/targetver.h; sourceTree = "<group>"; };
+		28934B571EAF918E00D00B11 /* TestExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestExport.h; path = ../../CppClearView/ClearView/TestExport.h; sourceTree = "<group>"; };
+		28934B581EAF918E00D00B11 /* Util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Util.cpp; path = ../../CppClearView/ClearView/Util.cpp; sourceTree = "<group>"; };
+		28934B591EAF918E00D00B11 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Util.h; path = ../../CppClearView/ClearView/Util.h; sourceTree = "<group>"; };
 		289B77FC1E9C81FE007D1709 /* ClearView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		289B77FF1E9C81FE007D1709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		289B78011E9C81FE007D1709 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,8 +108,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2849C04D1E9D2595003E84BF /* opencv2.framework in Frameworks */,
 				289B78211E9C8219007D1709 /* Accelerate.framework in Frameworks */,
+				2849C04D1E9D2595003E84BF /* opencv2.framework in Frameworks */,
 				289B78271E9C8242007D1709 /* Torch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,29 +118,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				281400AB1EA4981000EBE034 /* Accelerate.framework in Frameworks */,
 				2849C04E1E9D2595003E84BF /* opencv2.framework in Frameworks */,
+				281400AC1EA4982400EBE034 /* Torch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2849C04F1E9D2627003E84BF /* OpenCV */ = {
-			isa = PBXGroup;
-			children = (
-				2849C0591E9D27AE003E84BF /* OpenCVImage.h */,
-				2849C0561E9D2795003E84BF /* OpenCVImage.mm */,
-			);
-			name = OpenCV;
-			sourceTree = "<group>";
-		};
 		2867E77B1E9D1AB100D3CECE /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				2849C04F1E9D2627003E84BF /* OpenCV */,
-				2849C0531E9D2769003E84BF /* Image.swift */,
+				28934B371EAF220B00D00B11 /* Cpp */,
+				2849C0531E9D2769003E84BF /* ImageUtil.swift */,
+				2849C0591E9D27AE003E84BF /* NativeImageUtil.h */,
+				2849C0561E9D2795003E84BF /* NativeImageUtil.mm */,
 			);
 			name = Image;
+			sourceTree = "<group>";
+		};
+		28934B371EAF220B00D00B11 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				28934B4E1EAF918E00D00B11 /* ImageProcess.cpp */,
+				28934B4F1EAF918E00D00B11 /* ImageProcess.h */,
+				28934B501EAF918E00D00B11 /* OpenCVImage.cpp */,
+				28934B511EAF918E00D00B11 /* OpenCVImage.h */,
+				28934B521EAF918E00D00B11 /* OpenCVKernel.cpp */,
+				28934B531EAF918E00D00B11 /* OpenCVKernel.h */,
+				28934B541EAF918E00D00B11 /* stdafx.cpp */,
+				28934B551EAF918E00D00B11 /* stdafx.h */,
+				28934B561EAF918E00D00B11 /* targetver.h */,
+				28934B571EAF918E00D00B11 /* TestExport.h */,
+				28934B581EAF918E00D00B11 /* Util.cpp */,
+				28934B591EAF918E00D00B11 /* Util.h */,
+			);
+			name = Cpp;
 			sourceTree = "<group>";
 		};
 		289B77F31E9C81FE007D1709 = {
@@ -294,8 +332,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2867E7791E9CBEC800D3CECE /* Torch.framework in Resources */,
 				289B78311E9C8A1C007D1709 /* Lua in Resources */,
+				2867E7791E9CBEC800D3CECE /* Torch.framework in Resources */,
 				289B78071E9C81FE007D1709 /* Assets.xcassets in Resources */,
 				289B780A1E9C81FE007D1709 /* LaunchScreen.storyboard in Resources */,
 				289B78051E9C81FE007D1709 /* Main.storyboard in Resources */,
@@ -306,8 +344,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2867E77A1E9CBECF00D3CECE /* Torch.framework in Resources */,
 				289B78321E9C8A1C007D1709 /* Lua in Resources */,
+				2867E77A1E9CBECF00D3CECE /* Torch.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,14 +356,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289B783D1E9CA2BE007D1709 /* XorLearner.m in Sources */,
-				2849C0541E9D2769003E84BF /* Image.swift in Sources */,
-				2849C0571E9D2795003E84BF /* OpenCVImage.mm in Sources */,
-				289B78341E9C8A6D007D1709 /* ILearner.swift in Sources */,
-				289B782D1E9C8286007D1709 /* Torch.m in Sources */,
-				289B78021E9C81FE007D1709 /* ViewController.swift in Sources */,
 				289B78001E9C81FE007D1709 /* AppDelegate.swift in Sources */,
+				289B78341E9C8A6D007D1709 /* ILearner.swift in Sources */,
+				28934B5E1EAF918E00D00B11 /* OpenCVKernel.cpp in Sources */,
+				28934B621EAF918E00D00B11 /* Util.cpp in Sources */,
+				2849C0541E9D2769003E84BF /* ImageUtil.swift in Sources */,
+				2849C0571E9D2795003E84BF /* NativeImageUtil.mm in Sources */,
+				28934B5C1EAF918E00D00B11 /* OpenCVImage.cpp in Sources */,
+				289B782D1E9C8286007D1709 /* Torch.m in Sources */,
 				289B78381E9C972F007D1709 /* TorchLearner.m in Sources */,
+				289B78021E9C81FE007D1709 /* ViewController.swift in Sources */,
+				28934B601EAF918E00D00B11 /* stdafx.cpp in Sources */,
+				28934B5A1EAF918E00D00B11 /* ImageProcess.cpp in Sources */,
+				289B783D1E9CA2BE007D1709 /* XorLearner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,11 +378,16 @@
 			files = (
 				289B78351E9C8A6D007D1709 /* ILearner.swift in Sources */,
 				2849C0611E9D335D003E84BF /* LearnerTests.swift in Sources */,
-				2849C0551E9D2769003E84BF /* Image.swift in Sources */,
+				28934B5F1EAF918E00D00B11 /* OpenCVKernel.cpp in Sources */,
+				28934B631EAF918E00D00B11 /* Util.cpp in Sources */,
+				2849C0551E9D2769003E84BF /* ImageUtil.swift in Sources */,
 				289B78151E9C81FE007D1709 /* ClearViewTests.swift in Sources */,
+				28934B5D1EAF918E00D00B11 /* OpenCVImage.cpp in Sources */,
 				289B783E1E9CA2BE007D1709 /* XorLearner.m in Sources */,
-				2849C0581E9D2795003E84BF /* OpenCVImage.mm in Sources */,
+				2849C0581E9D2795003E84BF /* NativeImageUtil.mm in Sources */,
 				2849C05F1E9D3319003E84BF /* ImageTests.swift in Sources */,
+				28934B611EAF918E00D00B11 /* stdafx.cpp in Sources */,
+				28934B5B1EAF918E00D00B11 /* ImageProcess.cpp in Sources */,
 				289B78391E9C972F007D1709 /* TorchLearner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
