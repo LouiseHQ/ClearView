@@ -46,6 +46,15 @@
 		289B78391E9C972F007D1709 /* TorchLearner.m in Sources */ = {isa = PBXBuildFile; fileRef = 289B78371E9C972F007D1709 /* TorchLearner.m */; };
 		289B783D1E9CA2BE007D1709 /* XorLearner.m in Sources */ = {isa = PBXBuildFile; fileRef = 289B783C1E9CA2BE007D1709 /* XorLearner.m */; };
 		289B783E1E9CA2BE007D1709 /* XorLearner.m in Sources */ = {isa = PBXBuildFile; fileRef = 289B783C1E9CA2BE007D1709 /* XorLearner.m */; };
+		28F3EC8C1EB8D7520074E2AF /* ClearViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F3EC8A1EB8D7520074E2AF /* ClearViewUITests.swift */; };
+		28F3EC8D1EB8D7520074E2AF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28F3EC8B1EB8D7520074E2AF /* Info.plist */; };
+		28F3EC8F1EB8D7880074E2AF /* icon in Resources */ = {isa = PBXBuildFile; fileRef = 28F3EC8E1EB8D7880074E2AF /* icon */; };
+		28F3EC971EB8D7FD0074E2AF /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 28F3EC921EB8D7FD0074E2AF /* OpenCVWrapper.mm */; };
+		28F3EC991EB8D7FD0074E2AF /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F3EC961EB8D7FD0074E2AF /* UIImage+Rotate.m */; };
+		28F3EC9F1EB8D8430074E2AF /* ManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F3EC9B1EB8D8430074E2AF /* ManualViewController.swift */; };
+		28F3ECA01EB8D8430074E2AF /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F3EC9C1EB8D8430074E2AF /* PreviewViewController.swift */; };
+		28F3ECA11EB8D8430074E2AF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F3EC9D1EB8D8430074E2AF /* WelcomeViewController.swift */; };
+		28F3ECA31EB8FA8A0074E2AF /* AutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F3ECA21EB8FA8A0074E2AF /* AutoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +110,17 @@
 		289B783A1E9C9750007D1709 /* TorchLearner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorchLearner.h; sourceTree = "<group>"; };
 		289B783B1E9CA298007D1709 /* XorLearner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XorLearner.h; sourceTree = "<group>"; };
 		289B783C1E9CA2BE007D1709 /* XorLearner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XorLearner.m; sourceTree = "<group>"; };
+		28F3EC8A1EB8D7520074E2AF /* ClearViewUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClearViewUITests.swift; sourceTree = "<group>"; };
+		28F3EC8B1EB8D7520074E2AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28F3EC8E1EB8D7880074E2AF /* icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icon; sourceTree = "<group>"; };
+		28F3EC911EB8D7FD0074E2AF /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		28F3EC921EB8D7FD0074E2AF /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		28F3EC951EB8D7FD0074E2AF /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
+		28F3EC961EB8D7FD0074E2AF /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
+		28F3EC9B1EB8D8430074E2AF /* ManualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
+		28F3EC9C1EB8D8430074E2AF /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		28F3EC9D1EB8D8430074E2AF /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		28F3ECA21EB8FA8A0074E2AF /* AutoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +182,7 @@
 			children = (
 				289B77FE1E9C81FE007D1709 /* ClearView */,
 				289B78131E9C81FE007D1709 /* ClearViewTests */,
+				28F3EC851EB8D6F50074E2AF /* ClearViewUITests */,
 				289B77FD1E9C81FE007D1709 /* Products */,
 				289B781F1E9C8219007D1709 /* Frameworks */,
 			);
@@ -181,13 +202,18 @@
 			children = (
 				289B782A1E9C8286007D1709 /* ClearView-Bridging-Header.h */,
 				2867E77C1E9D1CD500D3CECE /* ClearView-Prefix.pch */,
+				28F3EC8E1EB8D7880074E2AF /* icon */,
 				289B78281E9C8261007D1709 /* Library */,
 				289B77FF1E9C81FE007D1709 /* AppDelegate.swift */,
+				28F3ECA21EB8FA8A0074E2AF /* AutoViewController.swift */,
+				28F3EC9B1EB8D8430074E2AF /* ManualViewController.swift */,
+				28F3EC9C1EB8D8430074E2AF /* PreviewViewController.swift */,
 				289B78011E9C81FE007D1709 /* ViewController.swift */,
-				289B78031E9C81FE007D1709 /* Main.storyboard */,
+				28F3EC9D1EB8D8430074E2AF /* WelcomeViewController.swift */,
 				289B78061E9C81FE007D1709 /* Assets.xcassets */,
-				289B78081E9C81FE007D1709 /* LaunchScreen.storyboard */,
 				289B780B1E9C81FE007D1709 /* Info.plist */,
+				289B78081E9C81FE007D1709 /* LaunchScreen.storyboard */,
+				289B78031E9C81FE007D1709 /* Main.storyboard */,
 			);
 			path = ClearView;
 			sourceTree = "<group>";
@@ -220,6 +246,7 @@
 			children = (
 				2867E77B1E9D1AB100D3CECE /* Image */,
 				289B78291E9C8269007D1709 /* Learning */,
+				28F3EC901EB8D7D40074E2AF /* Paint */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -245,6 +272,26 @@
 				289B783C1E9CA2BE007D1709 /* XorLearner.m */,
 			);
 			name = Torch;
+			sourceTree = "<group>";
+		};
+		28F3EC851EB8D6F50074E2AF /* ClearViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28F3EC8A1EB8D7520074E2AF /* ClearViewUITests.swift */,
+				28F3EC8B1EB8D7520074E2AF /* Info.plist */,
+			);
+			path = ClearViewUITests;
+			sourceTree = "<group>";
+		};
+		28F3EC901EB8D7D40074E2AF /* Paint */ = {
+			isa = PBXGroup;
+			children = (
+				28F3EC911EB8D7FD0074E2AF /* OpenCVWrapper.h */,
+				28F3EC921EB8D7FD0074E2AF /* OpenCVWrapper.mm */,
+				28F3EC951EB8D7FD0074E2AF /* UIImage+Rotate.h */,
+				28F3EC961EB8D7FD0074E2AF /* UIImage+Rotate.m */,
+			);
+			name = Paint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				289B78311E9C8A1C007D1709 /* Lua in Resources */,
+				28F3EC8F1EB8D7880074E2AF /* icon in Resources */,
 				2867E7791E9CBEC800D3CECE /* Torch.framework in Resources */,
 				289B78071E9C81FE007D1709 /* Assets.xcassets in Resources */,
 				289B780A1E9C81FE007D1709 /* LaunchScreen.storyboard in Resources */,
@@ -346,6 +394,7 @@
 			files = (
 				289B78321E9C8A1C007D1709 /* Lua in Resources */,
 				2867E77A1E9CBECF00D3CECE /* Torch.framework in Resources */,
+				28F3EC8D1EB8D7520074E2AF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,17 +406,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				289B78001E9C81FE007D1709 /* AppDelegate.swift in Sources */,
+				28F3ECA11EB8D8430074E2AF /* WelcomeViewController.swift in Sources */,
 				289B78341E9C8A6D007D1709 /* ILearner.swift in Sources */,
 				28934B5E1EAF918E00D00B11 /* OpenCVKernel.cpp in Sources */,
 				28934B621EAF918E00D00B11 /* Util.cpp in Sources */,
+				28F3EC971EB8D7FD0074E2AF /* OpenCVWrapper.mm in Sources */,
+				28F3EC991EB8D7FD0074E2AF /* UIImage+Rotate.m in Sources */,
 				2849C0541E9D2769003E84BF /* ImageUtil.swift in Sources */,
 				2849C0571E9D2795003E84BF /* NativeImageUtil.mm in Sources */,
+				28F3ECA01EB8D8430074E2AF /* PreviewViewController.swift in Sources */,
 				28934B5C1EAF918E00D00B11 /* OpenCVImage.cpp in Sources */,
 				289B782D1E9C8286007D1709 /* Torch.m in Sources */,
 				289B78381E9C972F007D1709 /* TorchLearner.m in Sources */,
 				289B78021E9C81FE007D1709 /* ViewController.swift in Sources */,
 				28934B601EAF918E00D00B11 /* stdafx.cpp in Sources */,
+				28F3ECA31EB8FA8A0074E2AF /* AutoViewController.swift in Sources */,
 				28934B5A1EAF918E00D00B11 /* ImageProcess.cpp in Sources */,
+				28F3EC9F1EB8D8430074E2AF /* ManualViewController.swift in Sources */,
 				289B783D1E9CA2BE007D1709 /* XorLearner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +437,7 @@
 				28934B631EAF918E00D00B11 /* Util.cpp in Sources */,
 				2849C0551E9D2769003E84BF /* ImageUtil.swift in Sources */,
 				289B78151E9C81FE007D1709 /* ClearViewTests.swift in Sources */,
+				28F3EC8C1EB8D7520074E2AF /* ClearViewUITests.swift in Sources */,
 				28934B5D1EAF918E00D00B11 /* OpenCVImage.cpp in Sources */,
 				289B783E1E9CA2BE007D1709 /* XorLearner.m in Sources */,
 				2849C0581E9D2795003E84BF /* NativeImageUtil.mm in Sources */,

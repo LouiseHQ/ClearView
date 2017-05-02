@@ -4,3 +4,4 @@
 
 #import "XorLearner.h"
 #import "NativeImageUtil.h"
+#import "OpenCVWrapper.h"
