@@ -37,6 +37,7 @@ class PreviewViewController: UIViewController, AVCapturePhotoCaptureDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        previewView.image = capturedImage
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -51,7 +52,7 @@ class PreviewViewController: UIViewController, AVCapturePhotoCaptureDelegate{
     }
     
     @IBAction func autoAction(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "backToCamera", sender: self)
+        self.performSegue(withIdentifier: "previewToAuto", sender: self)
     }
     
     @IBAction func saveAction(_ sender: UIButton) {

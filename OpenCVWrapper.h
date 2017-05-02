@@ -20,7 +20,7 @@
 //+(cv::Mat)cvMatFromUIImage:(UIImage *)image;
 //+(UIImage *)UIImageFromCVMat:(cv::Mat)cvMat;
 + (void) initMask: (UIImage*) inputImage ratioX:(CGFloat)ratioX ratioY:(CGFloat)ratioY;
-+ (void) updateMasktransX:(int)transX transY:(int)transY brushSize:(int)brushSize;
++ (UIImage*) updateMasktransX:(int)transX transY:(int)transY brushSize:(int)brushSize;
 + (UIImage*) inpaint: (UIImage*) origImage;
 
 

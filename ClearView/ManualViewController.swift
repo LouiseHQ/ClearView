@@ -49,12 +49,20 @@ class ManualViewController: UIViewController{
             let transX = Int32(pan.location(in: self.editView).x)
             let transY = Int32(pan.location(in: self.editView).y)
             brushSize = integer_t(self.brushSlider.value)
-            OpenCVWrapper.updateMasktransX(transX, transY: transY, brushSize: brushSize)
+            let curImage = OpenCVWrapper.updateMasktransX(transX, transY: transY, brushSize: brushSize)
+            self.editView.image = curImage
         }
     }
     
     @IBAction func doSomething(_ sender: UISlider){
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "manualToPreview" {
+            let pre = segue.destination as! PreviewViewController
+            pre.capturedImage = previewImage
+        }
     }
     
     @IBAction func backAction(_ sender: UIButton) {

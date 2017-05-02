@@ -18,10 +18,10 @@
 		F64FC28D1E9C9E74007F8B05 /* ClearViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64FC28C1E9C9E74007F8B05 /* ClearViewTests.swift */; };
 		F65B73DA1EA5C60900396073 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC60241EA5B6E800BF2863 /* WelcomeViewController.swift */; };
 		F65CDE751E9D4D9200B161FA /* ClearViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65CDE741E9D4D9200B161FA /* ClearViewUITests.swift */; };
+		F69BD4211EB8D08400E5CA3D /* AutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69BD4201EB8D08400E5CA3D /* AutoViewController.swift */; };
 		F6B7527D1EA9ADE300B57607 /* OpenCVWrapper.h in Sources */ = {isa = PBXBuildFile; fileRef = F6330BDD1EA99B2E007440DD /* OpenCVWrapper.h */; };
 		F6BC60211EA5582900BF2863 /* icon in Resources */ = {isa = PBXBuildFile; fileRef = F6BC60201EA5582900BF2863 /* icon */; };
 		F6CD28371EAFC18300B1B9CE /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CD28341EAFC18200B1B9CE /* UIImage+Rotate.m */; };
-		F6CD28381EAFC18300B1B9CE /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6CD28361EAFC18300B1B9CE /* UIImage+OpenCV.mm */; };
 		F6DCDABC1EAF02D100AF155C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DCDABB1EAF02D100AF155C /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,14 +60,13 @@
 		F65CDE721E9D4D9200B161FA /* ClearViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65CDE741E9D4D9200B161FA /* ClearViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearViewUITests.swift; sourceTree = "<group>"; };
 		F65CDE761E9D4D9200B161FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F69BD4201EB8D08400E5CA3D /* AutoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoViewController.swift; sourceTree = "<group>"; };
 		F6B7527C1EA9A97000B57607 /* ClearView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClearView-Bridging-Header.h"; sourceTree = "<group>"; };
 		F6BC601F1EA443AF00BF2863 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F6BC60201EA5582900BF2863 /* icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icon; sourceTree = "<group>"; };
 		F6BC60241EA5B6E800BF2863 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		F6CD28331EAFC18200B1B9CE /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
 		F6CD28341EAFC18200B1B9CE /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
-		F6CD28351EAFC18200B1B9CE /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
-		F6CD28361EAFC18300B1B9CE /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
 		F6DCDABB1EAF02D100AF155C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -103,8 +102,6 @@
 			children = (
 				F6CD28331EAFC18200B1B9CE /* UIImage+Rotate.h */,
 				F6CD28341EAFC18200B1B9CE /* UIImage+Rotate.m */,
-				F6CD28351EAFC18200B1B9CE /* UIImage+OpenCV.h */,
-				F6CD28361EAFC18300B1B9CE /* UIImage+OpenCV.mm */,
 				F6B7527C1EA9A97000B57607 /* ClearView-Bridging-Header.h */,
 				F6330BDD1EA99B2E007440DD /* OpenCVWrapper.h */,
 				F6330BDE1EA99B2E007440DD /* OpenCVWrapper.mm */,
@@ -135,6 +132,7 @@
 				F64FC2791E9C9E74007F8B05 /* ViewController.swift */,
 				F6BC60241EA5B6E800BF2863 /* WelcomeViewController.swift */,
 				F64FC27B1E9C9E74007F8B05 /* Main.storyboard */,
+				F69BD4201EB8D08400E5CA3D /* AutoViewController.swift */,
 				F61B2FB11EA663380079C109 /* PreviewViewController.swift */,
 				F615ECA71EB6B46B005D490C /* ManualViewController.swift */,
 				F64FC27E1E9C9E74007F8B05 /* Assets.xcassets */,
@@ -306,11 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6CD28381EAFC18300B1B9CE /* UIImage+OpenCV.mm in Sources */,
 				F615ECA81EB6B46B005D490C /* ManualViewController.swift in Sources */,
 				F6B7527D1EA9ADE300B57607 /* OpenCVWrapper.h in Sources */,
 				F61B2FB21EA663380079C109 /* PreviewViewController.swift in Sources */,
 				F6330BDF1EA99B2E007440DD /* OpenCVWrapper.mm in Sources */,
+				F69BD4211EB8D08400E5CA3D /* AutoViewController.swift in Sources */,
 				F65B73DA1EA5C60900396073 /* WelcomeViewController.swift in Sources */,
 				F64FC27A1E9C9E74007F8B05 /* ViewController.swift in Sources */,
 				F6CD28371EAFC18300B1B9CE /* UIImage+Rotate.m in Sources */,

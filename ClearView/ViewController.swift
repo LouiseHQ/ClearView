@@ -26,16 +26,21 @@ class  ViewController: UIViewController,UIImagePickerControllerDelegate,UINaviga
     //instant variables
     var captureSession: AVCaptureSession!
     var photoOutput: AVCapturePhotoOutput!
+    var device: AVCaptureDevice!
     var videoPreviewLayer: AVCaptureVideoPreviewLayer!
     var capturedImage:UIImage!
     var mask:UIImage!
     var editedImage:UIImage!
+    var frontImage:UIImage!
+    var isFront:Bool!
+    var input:AVCaptureDeviceInput!
     
     //override default viewWillAppear setting up sessions for live videopreview
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
         
+        isFront = false
         //setting icons for all the buttons
         let snapImage = UIImage(named: "./icon/snap.png") as UIImage?
         let libraryImage = UIImage(named: "./icon/library.png") as UIImage?
@@ -58,9 +63,8 @@ class  ViewController: UIViewController,UIImagePickerControllerDelegate,UINaviga
         captureSession.sessionPreset = AVCaptureSessionPresetPhoto
         photoOutput = AVCapturePhotoOutput()
         
-        let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
-        
-        if let input = try? AVCaptureDeviceInput(device: device) {
+        device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+        input = try? AVCaptureDeviceInput(device: device)
             if (captureSession.canAddInput(input)) {
                 captureSession.addInput(input)
                 if (captureSession.canAddOutput(photoOutput)) {
@@ -73,9 +77,7 @@ class  ViewController: UIViewController,UIImagePickerControllerDelegate,UINaviga
             } else {
                 print("issue here : captureSession.canAddInput")
             }
-        } else {
-            print("some problem here")
-        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -86,6 +88,18 @@ class  ViewController: UIViewController,UIImagePickerControllerDelegate,UINaviga
         videoPreviewLayer!.frame.origin.y = 0
         
     }
+    
+//    func switchCamera() {
+//        session?.beginConfiguration()
+//        let currentInput = session?.inputs.first as? AVCaptureDeviceInput
+//        session?.removeInput(currentInput)
+//        
+//        let newCameraDevice = currentInput?.device.position == .back ? getCamera(with: .front) : getCamera(with: .back)
+//        let newVideoInput = try? AVCaptureDeviceInput(device: newCameraDevice)
+//        session?.addInput(newVideoInput)
+//        session?.commitConfiguration()
+//    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -111,14 +125,6 @@ class  ViewController: UIViewController,UIImagePickerControllerDelegate,UINaviga
         
     }
     
-//    func panOccured(pan:UIPanGestureRecognizer){
-//        //print("Pan recognized")
-//        if pan.state == .began || pan.state == .changed {
-//            let transX = Int32(pan.location(in: self.CameraView).x)
-//            let transY = Int32(pan.location(in: self.CameraView).y)
-//            OpenCVWrapper.updateMasktransX(transX, transY: transY)
-//        }
-//    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "preview" {
@@ -160,15 +166,37 @@ class  ViewController: UIViewController,UIImagePickerControllerDelegate,UINaviga
             let dataProvider = CGDataProvider(data: dataImage as CFData)
             let cgImageRef: CGImage! = CGImage(jpegDataProviderSource: dataProvider!, decode: nil, shouldInterpolate: true, intent: .defaultIntent)
             capturedImage = UIImage(cgImage: cgImageRef, scale: 1.0, orientation: UIImageOrientation.right)
-            let rect = AVMakeRect(aspectRatio: capturedImage.size, insideRect: CameraView.bounds)
-            capturedImage.draw(in: CameraView.frame)
-            print(capturedImage.size)
+            //captureSession.stopRunning()
+            //let rect = AVMakeRect(aspectRatio: capturedImage.size, insideRect: CameraView.bounds)
+            //capturedImage.draw(in: CameraView.frame)
             
-            self.CameraView.image = capturedImage
-            captureSession.stopRunning()
+            if (!isFront){
+                isFront = true
+                
+                captureSession.beginConfiguration()
+                let currentInput = captureSession.inputs.first as? AVCaptureDeviceInput
+                captureSession.removeInput(currentInput)
+                
+                let newCameraDevice =  AVCaptureDevice.defaultDevice(withDeviceType: .builtInWideAngleCamera, mediaType: AVMediaTypeVideo, position: .front)
+                let newVideoInput = try? AVCaptureDeviceInput(device: newCameraDevice)
+                captureSession.addInput(newVideoInput)
+                captureSession.commitConfiguration()
+                
+            let settings = AVCapturePhotoSettings()
+            let previewPixelType = settings.availablePreviewPhotoPixelFormatTypes.first!
+            let previewFormat = [
+                kCVPixelBufferPixelFormatTypeKey as String: previewPixelType,
+                kCVPixelBufferWidthKey as String: 160,
+                kCVPixelBufferHeightKey as String: 160
+            ]
+            settings.previewPhotoFormat = previewFormat
+            photoOutput.capturePhoto(with: settings, delegate: self)
+            
             self.performSegue(withIdentifier: "preview", sender: self);
-        } else {
-            print("some error here")
+               }
+        else{
+            frontImage = capturedImage
+        }
         }
     }
     

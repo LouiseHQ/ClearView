@@ -17,6 +17,7 @@
 using namespace cv;
 
 Mat mask;
+Mat origImage;
 cv::Point2f prePt = {-1.0,-1.0};
 float scaleX;
 float scaleY;
@@ -94,10 +95,11 @@ float scaleY;
 }
 
 + (void) initMask: (UIImage*) inputImage ratioX:(CGFloat)ratioX ratioY:(CGFloat)ratioY{
-    Mat inputMat = [self cvMatFromUIImage:inputImage];
+    UIImage* rotatedImage = [inputImage rotateToImageOrientation];
+    origImage = [self cvMatFromUIImage:rotatedImage];
     scaleX = ratioX;
     scaleY = ratioY;
-    mask = Mat::zeros(inputMat.size(), CV_8U);
+    mask = Mat::zeros(origImage.size(), CV_8U);
 //    NSLog(@"Mask size: %i, %i", mask.rows, mask.cols);
 //    NSLog(@"uiImage size: %f, %f", inputImage.size.width, inputImage.size.height);
 
@@ -110,10 +112,18 @@ float scaleY;
  @param transX x coord in view
  @param transY y coord in view
  */
-+ (void) updateMasktransX:(int)transX transY:(int)transY brushSize:(int)brushSize{
++ (UIImage*) updateMasktransX:(int)transX transY:(int)transY brushSize:(int)brushSize{
     cv::Point2f curPt = {static_cast<float>(scaleX*transX), static_cast<float>(scaleY*transY)};
+    if (prePt.x==-1.0){
+        prePt = curPt;
+        UIImage* result =[self UIImageFromCVMat:origImage];
+        return result;
+    }
     line(mask, prePt, curPt, Scalar::all(255), brushSize, 8, 0 );
+    line(origImage,prePt, curPt, Scalar::all(255), brushSize, 8, 0 );
     prePt = curPt;
+    UIImage* result =[self UIImageFromCVMat:origImage];
+    return result;
 }
 
 
@@ -134,11 +144,11 @@ float scaleY;
     int type = origMat.type();
     NSLog(@"type:%i",type);
     cvtColor(origMat, origMat8uc1, CV_RGBA2RGB);
-    type = origMat8uc1.type();
-    NSLog(@"type:%i",type);
+//    type = origMat8uc1.type();
+//    NSLog(@"type:%i",type);
     NSLog(@"Inpaiting started");
-    type = mask.type();
-    NSLog(@"type:%i",type);
+//    type = mask.type();
+//    NSLog(@"type:%i",type);
     cv::inpaint(origMat8uc1, mask, inpainted, 3, CV_INPAINT_TELEA);
     NSLog(@"Inpaiting finised");
     
