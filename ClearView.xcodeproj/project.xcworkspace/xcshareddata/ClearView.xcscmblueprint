@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5963E809A994B915407356A618BD5BB7CD24A4E3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "d9c94b55-221a-4017-ad66-301122ff4019++5554" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "d9c94b55-221a-4017-ad66-301122ff4019++5554" : 9223372036854775807,
+    "5963E809A994B915407356A618BD5BB7CD24A4E3" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3BBFFC6D-1372-4255-B857-982764BD5824",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "d9c94b55-221a-4017-ad66-301122ff4019++5554" : "",
+    "5963E809A994B915407356A618BD5BB7CD24A4E3" : "ClearView\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ClearView",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ClearView.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LouiseHuang\/ClearView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5963E809A994B915407356A618BD5BB7CD24A4E3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/subversion.ews.illinois.edu\/svn\/sp17-cs242",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d9c94b55-221a-4017-ad66-301122ff4019++5554"
+    }
+  ]
+}
